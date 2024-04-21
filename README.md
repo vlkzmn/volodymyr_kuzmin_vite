@@ -22,7 +22,6 @@
   <li>Semantic and OG meta tags are used.</li>
   <li>Schema Markup JSON-LD implemented.</li>
   <li>Images are optimized.</li>
-  <li>Google search console and analytics have been added to the page.</li>
 </ul>
 
 <p><em>See google lighthouse report below:</em></p>
