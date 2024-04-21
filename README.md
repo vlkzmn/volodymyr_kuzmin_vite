@@ -24,12 +24,6 @@
   <li>Images are optimized.</li>
 </ul>
 
-<p><em>See google lighthouse report below:</em></p>
-
-<p align="center">
-  <img src="./public/img/lightHouseGoogle.png" width="700px" alt="My Personal Page lighthouse">
-</p>
-
 # Preview
 
 <p align="center">
