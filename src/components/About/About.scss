@@ -1,5 +1,5 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .about {
   margin-bottom: 200px;
@@ -27,7 +27,7 @@
   &__content {
     display: flex;
     flex-direction: column-reverse;
-    gap: 40px;    
+    gap: 40px;
     margin: 0 auto;
 
     @include onTablet {
@@ -51,14 +51,17 @@
     height: 300px;
     margin: 0 auto;
     border-radius: 5px;
-    transition: filter $smoothTime, box-shadow $smoothTime, transform $smoothTime;
+    transition:
+      filter $smoothTime,
+      box-shadow $smoothTime,
+      transform $smoothTime;
 
     @include onDesktop {
       &:hover {
         box-shadow: 5px 5px $Green;
         transform: translate(-5px, -5px);
       }
-    }    
+    }
   }
 
   &__title {
@@ -70,13 +73,13 @@
     &::before {
       font-family: $RobotoMono;
       font-size: 24px;
-      content: "0" counter(section) ".";
+      content: '0' counter(section) '.';
       color: $Green;
     }
 
     &::after {
       display: inline-block;
-      content: "";
+      content: '';
       width: 300px;
       height: 1px;
       margin-left: 10px;

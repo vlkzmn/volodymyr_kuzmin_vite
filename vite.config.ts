@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: 'https://volodymyr-kuzmin.pp.ua/',
+  base: 'https://vlkzmn.github.io/volodymyr_kuzmin_vite/',
   server: {
     open: true,
   },

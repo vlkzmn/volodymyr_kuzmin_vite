@@ -1,5 +1,5 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .experience {
   margin-bottom: 200px;
@@ -34,13 +34,13 @@
     &::before {
       font-family: $RobotoMono;
       font-size: 24px;
-      content: "0" counter(section) ".";
+      content: '0' counter(section) '.';
       color: $Green;
     }
 
     &::after {
       display: inline-block;
-      content: "";
+      content: '';
       width: 300px;
       height: 1px;
       margin-left: 10px;
@@ -97,7 +97,7 @@
     line-height: 26px;
 
     &::before {
-      content: "▹";
+      content: '▹';
       position: absolute;
       left: -20px;
       font-size: 20px;

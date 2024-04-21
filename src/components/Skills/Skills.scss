@@ -1,5 +1,5 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .skills {
   counter-increment: section;
@@ -34,13 +34,13 @@
     &::before {
       font-family: $RobotoMono;
       font-size: 24px;
-      content: "0" counter(section) ".";
+      content: '0' counter(section) '.';
       color: $Green;
     }
 
     &::after {
       display: inline-block;
-      content: "";
+      content: '';
       width: 300px;
       height: 1px;
       margin-left: 10px;
@@ -83,7 +83,7 @@
       &:hover {
         filter: brightness(100%);
       }
-    }    
+    }
   }
 
   &__list {
@@ -93,7 +93,7 @@
       display: block;
       font-family: $RobotoMono;
       line-height: 30px;
-    }    
+    }
   }
 
   &__line {

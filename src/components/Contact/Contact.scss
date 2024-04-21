@@ -1,5 +1,5 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .contact {
   margin-bottom: 100px;
@@ -30,13 +30,13 @@
     &::before {
       font-family: $RobotoMono;
       font-size: 24px;
-      content: "0" counter(section) ".";
+      content: '0' counter(section) '.';
       color: $Green;
     }
 
     &::after {
       display: inline-block;
-      content: "";
+      content: '';
       width: 300px;
       height: 1px;
       margin-left: 10px;
@@ -62,7 +62,7 @@
     align-items: center;
     width: 100%;
     margin-bottom: 30px;
-    
+
     @include onTablet {
       align-items: start;
       width: 30%;
@@ -86,11 +86,11 @@
       &:hover {
         color: $Green;
       }
-    }    
+    }
 
     &::selection {
       background: $LightestNavy;
-    }    
+    }
 
     &::before {
       display: inline-block;
@@ -178,7 +178,7 @@
     color: $Slate;
 
     scrollbar-width: thin;
-    scrollbar-color: $Slate $Navy; 
+    scrollbar-color: $Slate $Navy;
 
     &::-webkit-scrollbar {
       width: 10px;
@@ -188,7 +188,7 @@
       background: $Navy;
       border-radius: 5px;
     }
-    
+
     &::-webkit-scrollbar-thumb {
       background-color: $Slate;
       border-radius: 5px;
@@ -243,13 +243,17 @@
     cursor: pointer;
 
     @include onDesktop {
-      transition: color $smoothTime, border $smoothTime, box-shadow $smoothTime, transform $smoothTime;
+      transition:
+        color $smoothTime,
+        border $smoothTime,
+        box-shadow $smoothTime,
+        transform $smoothTime;
 
       &:hover {
         box-shadow: 3px 3px $Green;
         transform: translate(-3px, -3px);
       }
-    }    
+    }
 
     &:active {
       box-shadow: 1px 1px $Green;
