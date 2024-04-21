@@ -54,7 +54,7 @@
     "title": "My Personal Page",
     "description": "My personal page, it’s about me, my skills, my projects and getting in touch.",
     "image": "img/projects/vlkzmn.webp",
-    "gitHubUrl": "https://github.com/vlkzmn/volodymyr_kuzmin",
+    "gitHubUrl": "https://github.com/vlkzmn/volodymyr_kuzmin_vite",
     "url": "https://volodymyr-kuzmin.pp.ua/",
     "stack": "React Typescript Sass",
     "isFeatured": false
