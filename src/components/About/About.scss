@@ -1,0 +1,97 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.about {
+  margin-bottom: 200px;
+  counter-increment: section;
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1420px;
+    padding: 0 25px;
+
+    @include onTablet {
+      padding: 0 40px;
+    }
+
+    @include onDesktop {
+      padding: 0 50px;
+    }
+  }
+
+  &__wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;    
+    margin: 0 auto;
+
+    @include onTablet {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    @include onDesktop {
+      max-width: 1000px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__foto {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+    transition: filter $smoothTime, box-shadow $smoothTime, transform $smoothTime;
+
+    @include onDesktop {
+      &:hover {
+        box-shadow: 5px 5px $Green;
+        transform: translate(-5px, -5px);
+      }
+    }    
+  }
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: $LightestSlate;
+
+    &::before {
+      font-family: $RobotoMono;
+      font-size: 24px;
+      content: "0" counter(section) ".";
+      color: $Green;
+    }
+
+    &::after {
+      display: inline-block;
+      content: "";
+      width: 300px;
+      height: 1px;
+      margin-left: 10px;
+      background-color: $LightestNavy;
+      transform: translateY(-8px);
+    }
+  }
+
+  &__paragraph {
+    color: $Slate;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  &__paragraph-link {
+    color: $Green;
+  }
+}

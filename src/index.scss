@@ -1,0 +1,51 @@
+@import "./styles/variables.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background: $LightestNavy;
+  color: $LightestSlate;
+}
+
+h1,
+h2,
+h3,
+h4,
+body,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: $Roboto;
+  padding-top: 30px;
+  color: $Slate;
+  background-color: $Navy;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $Navy;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $Slate;
+  }
+}

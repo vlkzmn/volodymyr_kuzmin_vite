@@ -1,0 +1,206 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1420px;
+    padding: 0 25px;
+
+    @include onTablet {
+      padding: 0 40px;
+    }
+
+    @include onDesktop {
+      padding: 0 50px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20vh;
+    animation: slide-down 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    @keyframes slide-down {
+      0% {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  &__svg {
+    display: block;
+  }
+
+  &__links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__logo {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    border: 1px solid $Green;
+    border-radius: 5px;
+    transition: box-shadow $smoothTime, transform $smoothTime;
+
+    @include onDesktop {
+      &:hover {
+        box-shadow: 3px 3px $Green;
+        transform: translate(-3px, -3px);
+      }
+
+      &:active {
+        box-shadow: 1px 1px $Green;
+        transform: translate(-1px, -1px);
+      }
+    }
+  }
+
+  &__logo-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__list {
+    display: none;
+
+    @media (min-width: 870px) {
+      display: flex;
+      gap: 30px;
+      counter-reset: item;
+    }
+  }
+
+  &__list-link {
+    padding: 10px 0;
+    font-family: $RobotoMono;
+    font-size: 14px;
+    text-decoration: none;
+    color: $LightSlate;
+    counter-increment: item;
+    transition: color $smoothTime;
+
+    &::before {
+      content: "0" counter(item) ".";
+      color: $Green;
+      padding-right: 8px;
+    }
+
+    &:hover {
+      color: $Green;
+    }
+  }
+
+  &__button {
+    box-sizing: border-box;
+    width: 80px;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid $Green;
+    border-radius: 5px;
+    font-family: $RobotoMono;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: $Green;
+    background-color: transparent;
+
+    @include onDesktop {
+      transition: box-shadow $smoothTime, transform $smoothTime;
+
+      &:hover {
+        box-shadow: 3px 3px $Green;
+        transform: translate(-3px, -3px);
+      }
+
+      &:active {
+        box-shadow: 1px 1px $Green;
+        transform: translate(-1px, -1px);
+      }
+    }
+  }
+
+  &__content {
+    @include on480x {
+      margin-left: 20px;
+    }
+
+    @include onTablet {
+      margin-left: 80px;
+    }
+
+    @include onDesktop {
+      margin-left: 16vw;
+    }
+  }
+
+  @keyframes slide-top {
+    0% {
+      transform: translateY(25px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  &__hi {
+    font-family: $RobotoMono;
+    font-size: 16px;
+    color: $Green;
+    margin-bottom: 20px;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 0.2s;
+  }
+
+  &__title {
+    font-size: clamp(34px, 8vw, 64px);
+    font-weight: 600;
+    color: $LightestSlate;
+    margin-bottom: 10px;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 0.3s;
+
+    @include onDesktop {
+      font-size: 80px;
+    }
+  }
+
+  &__legend {
+    font-size: clamp(34px, 8vw, 64px);
+    font-weight: 500;
+    color: $Slate;
+    margin-bottom: 20px;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 0.4s;
+  }
+
+  &__text {
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 26px;
+    color: $Slate;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 0.5s;
+  }
+}

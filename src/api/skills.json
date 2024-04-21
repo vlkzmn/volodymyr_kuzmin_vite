@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "image": "img/skills/html5.svg"
+  },
+  {
+    "id": 2,
+    "name": "CSS",
+    "image": "img/skills/css3.svg"
+  },
+  {
+    "id": 3,
+    "name": "SASS",
+    "image": "img/skills/sass.svg"
+  },
+  {
+    "id": 6,
+    "name": "JavaScript",
+    "image": "img/skills/javascript.svg"
+  },
+  {
+    "id": 7,
+    "name": "TypeScript",
+    "image": "img/skills/typescript.svg"
+  },
+  {
+    "id": 8,
+    "name": "React",
+    "image": "img/skills/react.svg"
+  },
+  {
+    "id": 4,
+    "name": "Next",
+    "image": "img/skills/next.png"
+  },
+  {
+    "id": 5,
+    "name": "Redux",
+    "image": "img/skills/redux.svg"
+  },
+  {
+    "id": 9,
+    "name": "Node",
+    "image": "img/skills/nodejs.svg"
+  },
+  {
+    "id": 10,
+    "name": "SQL",
+    "image": "img/skills/sql.svg"
+  }
+]

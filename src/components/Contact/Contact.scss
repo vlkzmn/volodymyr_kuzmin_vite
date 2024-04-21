@@ -1,0 +1,259 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.contact {
+  margin-bottom: 100px;
+  counter-increment: section;
+
+  &__wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    margin: 0 auto;
+    padding: 0 25px;
+
+    @include onTablet {
+      padding: 0 40px;
+    }
+
+    @include onDesktop {
+      padding: 0 50px;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: $LightestSlate;
+
+    &::before {
+      font-family: $RobotoMono;
+      font-size: 24px;
+      content: "0" counter(section) ".";
+      color: $Green;
+    }
+
+    &::after {
+      display: inline-block;
+      content: "";
+      width: 300px;
+      height: 1px;
+      margin-left: 10px;
+      background-color: $LightestNavy;
+      transform: translateY(-8px);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include onTablet {
+      flex-direction: row;
+    }
+  }
+
+  &__data {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+    
+    @include onTablet {
+      align-items: start;
+      width: 30%;
+      padding-right: 50px;
+      margin: 0;
+    }
+
+    @include onDesktop {
+      width: 40%;
+      padding-left: 100px;
+    }
+  }
+
+  &__data-link {
+    width: max-content;
+    font-size: 18px;
+
+    @include onDesktop {
+      transition: color $smoothTime;
+
+      &:hover {
+        color: $Green;
+      }
+    }    
+
+    &::selection {
+      background: $LightestNavy;
+    }    
+
+    &::before {
+      display: inline-block;
+      margin-right: 25px;
+      content: '';
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left bottom;
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+    }
+
+    &--phone {
+      &::before {
+        background-image: url(../../images/phone.svg);
+      }
+    }
+
+    &--email {
+      &::before {
+        background-image: url(../../images/email.svg);
+      }
+    }
+  }
+
+  &__form {
+    width: 100%;
+    margin: 0 auto;
+
+    @include onTablet {
+      width: 60%;
+      margin: 0;
+    }
+  }
+
+  &__details {
+    box-sizing: border-box;
+    border: 1px solid $Slate;
+    background-color: $Navy;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $Slate;
+    border-radius: 5px;
+
+    &::placeholder {
+      font-family: $RobotoMono;
+      font-size: 16px;
+      line-height: 24px;
+      color: $Slate;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $Green;
+    }
+
+    &--invalid {
+      border-color: #ff0000;
+    }
+
+    &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 1000px $Navy inset;
+      -webkit-text-fill-color: $Slate;
+    }
+  }
+
+  &__massage {
+    box-sizing: border-box;
+    border: 1px solid $Slate;
+    background-color: $Navy;
+    resize: none;
+    width: 100%;
+    height: 128px;
+    margin-bottom: 30px;
+    padding: 12px 20px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $Roboto;
+    border-radius: 5px;
+    color: $Slate;
+
+    scrollbar-width: thin;
+    scrollbar-color: $Slate $Navy; 
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $Navy;
+      border-radius: 5px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: $Slate;
+      border-radius: 5px;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $Green;
+    }
+
+    &::placeholder {
+      font-family: $RobotoMono;
+      font-size: 16px;
+      line-height: 24px;
+      color: $Slate;
+    }
+
+    &--invalid {
+      border-color: #ff0000;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__report {
+    font-family: $RobotoMono;
+    color: $Green;
+
+    &--error {
+      color: #ff7f7f;
+    }
+  }
+
+  &__button {
+    box-sizing: border-box;
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid $Green;
+    border-radius: 5px;
+    font-family: $RobotoMono;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: $Green;
+    background-color: $Navy;
+    cursor: pointer;
+
+    @include onDesktop {
+      transition: color $smoothTime, border $smoothTime, box-shadow $smoothTime, transform $smoothTime;
+
+      &:hover {
+        box-shadow: 3px 3px $Green;
+        transform: translate(-3px, -3px);
+      }
+    }    
+
+    &:active {
+      box-shadow: 1px 1px $Green;
+      transform: translate(-1px, -1px);
+    }
+  }
+}

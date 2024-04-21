@@ -1,0 +1,146 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.skills {
+  counter-increment: section;
+  margin: 0 auto 200px;
+
+  @include onTablet {
+    margin: 0 0 200px;
+  }
+
+  &__wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+
+    margin: 0 auto;
+    padding: 0 25px;
+
+    @include onTablet {
+      padding: 0 40px;
+    }
+
+    @include onDesktop {
+      padding: 0 50px;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: $LightestSlate;
+
+    &::before {
+      font-family: $RobotoMono;
+      font-size: 24px;
+      content: "0" counter(section) ".";
+      color: $Green;
+    }
+
+    &::after {
+      display: inline-block;
+      content: "";
+      width: 300px;
+      height: 1px;
+      margin-left: 10px;
+      background-color: $LightestNavy;
+      transform: translateY(-8px);
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 130px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icons {
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+    @include onTablet {
+      max-width: 600px;
+      gap: 30px;
+      justify-content: space-between;
+    }
+  }
+
+  &__icon {
+    width: 60px;
+    height: 85px;
+    object-fit: contain;
+
+    @include onDesktop {
+      filter: brightness(60%);
+      transition: filter $smoothTime;
+
+      &:hover {
+        filter: brightness(100%);
+      }
+    }    
+  }
+
+  &__list {
+    display: none;
+
+    @include onTablet {
+      display: block;
+      font-family: $RobotoMono;
+      line-height: 30px;
+    }    
+  }
+
+  &__line {
+    width: 400px;
+    border: 1px solid $LightestNavy;
+    margin-bottom: 50px;
+  }
+
+  &__basic-title {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    color: $LightSlate;
+    margin-bottom: 30px;
+  }
+
+  &__basic-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+  }
+
+  &__basic-block {
+    width: 86px;
+  }
+
+  &__basic-image {
+    height: 100px;
+  }
+
+  &__basic-image-icon {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    filter: brightness(60%);
+    transition: filter $smoothTime;
+
+    &:hover {
+      filter: brightness(100%);
+    }
+  }
+
+  &__basic-text {
+    font-family: $RobotoMono;
+    text-align: center;
+  }
+}

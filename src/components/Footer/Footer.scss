@@ -1,0 +1,99 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.footer {
+  margin-bottom: 40px;
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1420px;
+    padding: 0 25px;
+
+    @include onTablet {
+      padding: 0 40px;
+    }
+
+    @include onDesktop {
+      padding: 0 50px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 30px;
+    list-style: none;
+
+    @include onDesktop {
+      position: fixed;
+      margin-left: -10px;
+      bottom: 0;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 0;
+
+      &::after {
+        content: "";
+        width: 2px;
+        height: 100px;
+        background-color: $Slate;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    animation: slide-footer 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    @keyframes slide-footer {
+      0% {
+        transform: translateY(200px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  &__social-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 10px 0;
+    color: $Slate;
+
+    @include onDesktop {
+      transition: color $smoothTime, transform $smoothTime;
+
+      &:hover {
+        color: $Green;
+        transform: translateY(-3px);
+      }
+    }    
+  }
+
+  &__degign {
+    font-family: $RobotoMono;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  &__link {
+    padding: 0 10px;
+    text-decoration: none;
+    color: $Green;
+
+    @include onDesktop {
+      color: $Slate;
+      transition: color $smoothTime;
+
+      &:hover {
+        color: $Green;
+      }
+    }    
+  }
+}

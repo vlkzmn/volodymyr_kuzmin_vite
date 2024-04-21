@@ -1,0 +1,162 @@
+[
+  {
+    "id": 15,
+    "title": "Github Kanban Board",
+    "description": "The app downloads issues from the GitHub API and creates a Kanban board with the ability to drag and drop between columns and reorder issues. Saving drag-and-drop results and implementing integration tests.",
+    "image": "img/projects/github-kanban-board.webp",
+    "gitHubUrl": "https://github.com/vlkzmn/github_kanban_board",
+    "url": "https://vlkzmn.github.io/github_kanban_board/",
+    "stack": "React Redux RTK-Query Typescript",
+    "isFeatured": true
+  },
+  {
+    "id": 14,
+    "title": "Charity Project Big Hearts",
+    "description": "The application makes it possible to post advertisements in which you can offer free things or services, or advertisements requesting help or collecting donations.",
+    "image": "img/projects/big-hearts.webp",
+    "gitHubUrl": "https://github.com/vlkzmn/big_hearts",
+    "url": "https://velyki-sertsia.pp.ua/",
+    "stack": "React Typescript Sass",
+    "isFeatured": true
+  },
+  {
+    "id": 12,
+    "title": "Schema Questionnaires",
+    "description": "Psychological test - multi-language, dark/light theme, saving results to the database and sending PDF results by email, access to view results in the application by authorization (access/refresh tokens).",
+    "image": "img/projects/shema.webp",
+    "gitHubUrl": "https://github.com/vlkzmn/shema",
+    "url": "https://young-schema-questionnaire.pp.ua/",
+    "stack": "React Typescript Node.js",
+    "isFeatured": true
+  },
+  {
+    "id": 2,
+    "title": "Copywriters Landing page",
+    "description": "Landing page for a copywriter demonstrates the topics of work that can be ordered, the timing and cost of services, the advantages of their work, and positive customer reviews.",
+    "image": "img/projects/motivaciyniy-lyst.webp",
+    "gitHubUrl": "https://github.com/vlkzmn/motivation",
+    "url": "https://motivaciyniy-lyst.pp.ua/",
+    "stack": "HTML Sass JavaScript",
+    "isFeatured": true
+  },
+  {
+    "id": 16,
+    "title": "Website for the Lyceum",
+    "description": "Website for the Kyiv Technical Lyceum. Installing and configuring the WordPress package, adding plugins. Customization of the theme and functionality. Migrating a database from Drupal.",
+    "image": "img/projects/dtl.webp",
+    "gitHubUrl": "https://github.com/vlkzmn",
+    "url": "http://tl.kyiv.ua/",
+    "stack": "Wordpress PHP SQL",
+    "isFeatured": true
+  },
+  {
+    "id": 7,
+    "title": "My Personal Page",
+    "description": "My personal page, it’s about me, my skills, my projects and getting in touch.",
+    "image": "img/projects/vlkzmn.webp",
+    "gitHubUrl": "https://github.com/vlkzmn/volodymyr_kuzmin",
+    "url": "https://volodymyr-kuzmin.pp.ua/",
+    "stack": "React Typescript Sass",
+    "isFeatured": false
+  },
+  {
+    "id": 10,
+    "title": "Simple Chat",
+    "description": "A single-page application implements simple chat functionality. Instant data exchange using websockets.",
+    "image": "",
+    "gitHubUrl": "https://github.com/vlkzmn/simple_chat",
+    "url": "https://vlkzmn.github.io/simple_chat/",
+    "stack": "React Typescript Node.js",
+    "isFeatured": false
+  },
+  {
+    "id": 11,
+    "title": "Todo App",
+    "description": "A single-page application that allows users to create and manage a list of tasks.",
+    "image": "",
+    "gitHubUrl": "https://github.com/vlkzmn/todo_app",
+    "url": "https://vlkzmn.github.io/todo_app/",
+    "stack": "React Typescript Sass",
+    "isFeatured": false
+  },
+  {
+    "id": 9,
+    "title": "Gadgets Online Store",
+    "description": "A single-page application implements online store functionality.",
+    "image": "",
+    "gitHubUrl": "https://github.com/vlkzmn/gadgets_store",
+    "url": "https://vlkzmn.github.io/gadgets_store/",
+    "stack": "React Typescript Node.js",
+    "isFeatured": false
+  },
+  {
+    "id": 8,
+    "title": "2048 Game",
+    "description": "My version of the game 2048. The game is implemented for both the desktop version and mobile devices. The playing field can be moved using the arrow keys on the keyboard or by swiping on the screen.",
+    "image": "",
+    "gitHubUrl": "https://github.com/vlkzmn/2048_game",
+    "url": "https://vlkzmn.github.io/2048_game/",
+    "stack": "HTML Sass JavaScript",
+    "isFeatured": false
+  },
+  {
+    "id": 3,
+    "title": "Potr Pots Landing Page",
+    "description": "Landing page for POTR POTS Self Watering Plant Pots. Provides information about the features of using pots, the advantages compared to other pots, and the creators. There is a feedback form on the page.",
+    "image": "img/projects/potr-pots.webp",
+    "gitHubUrl": "https://github.com/vlkzmn/potr_pots_landing",
+    "url": "https://vlkzmn.github.io/potr_pots_landing/",
+    "stack": "HTML Sass JavaScript",
+    "isFeatured": false
+  },
+  {
+    "id": 1,
+    "title": "Crazybaby Landing Page",
+    "description": "Landing Page Presentation for Luna Eye Speakers: Unveiling detailed insights into the product, its technical features, and the numerous advantages it brings.",
+    "image": "img/projects/crazybaby.webp",
+    "gitHubUrl": "https://github.com/vlkzmn/crazybaby_landing",
+    "url": "https://vlkzmn.github.io/crazybaby_landing/",
+    "stack": "HTML Sass JavaScript",
+    "isFeatured": false
+  },
+  {
+    "id": 4,
+    "title": "Museum Landing Page",
+    "description": "Landing page for the National Art Museum of Ukraine. Provides information about museum opening hours, ticket prices, current exhibitions and events, displays a gallery of some paintings, and displays a form for subscribing to museum news.",
+    "image": "",
+    "gitHubUrl": "https://github.com/vlkzmn/museum_landing",
+    "url": "https://vlkzmn.github.io/museum_landing/",
+    "stack": "HTML Sass JavaScript",
+    "isFeatured": false
+  },
+  {
+    "id": 5,
+    "title": "NAMU Landing Page",
+    "description": "The second version of the landing page for the National Art Museum of Ukraine. According to the technical specifications, only the main page has been implemented, links to other pages are not working.",
+    "image": "img/projects/namu.webp",
+    "gitHubUrl": "https://github.com/vlkzmn/namu_landing",
+    "url": "https://vlkzmn.github.io/namu_landing/",
+    "stack": "HTML Sass",
+    "isFeatured": false
+  },
+  {
+    "id": 13,
+    "title": "MyBike Landing Page",
+    "description": "Landing page for a bicycle store. Demonstrates the most popular models, describes the main characteristics and advantages and provides a contact form.",
+    "image": "img/projects/bike.webp",
+    "gitHubUrl": "https://github.com/vlkzmn/mybike_landing",
+    "url": "https://vlkzmn.github.io/mybike_landing/",
+    "stack": "HTML Sass JavaScript",
+    "isFeatured": false
+  },
+  {
+    "id": 6,
+    "title": "Miami Landing Page",
+    "description": "Landing page for a real estate agency. Provides information about the agency's work, demonstrates several of the most attractive real estate properties, displays reviews of the agency's clients and provides a contact form.",
+    "image": "img/projects/miami.webp",
+    "gitHubUrl": "https://github.com/vlkzmn/miami_landing",
+    "url": "https://vlkzmn.github.io/miami_landing/",
+    "stack": "HTML Sass JavaScript",
+    "isFeatured": false
+  }
+]

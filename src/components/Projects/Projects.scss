@@ -1,0 +1,311 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.projects {
+  margin-bottom: 200px;
+  counter-increment: section;
+
+  &__wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 100px;
+    padding-left: 25px;
+    font-size: 30px;
+    color: $LightestSlate;
+
+    @include onTablet {
+      margin-bottom: 50px;
+      padding-left: 40px;
+    }
+
+    @include onDesktop {
+      padding-left: 0;
+    }
+
+    &::before {
+      font-family: $RobotoMono;
+      font-size: 24px;
+      content: "0" counter(section) ".";
+      color: $Green;
+    }
+
+    &::after {
+      display: inline-block;
+      content: "";
+      width: 300px;
+      height: 1px;
+      margin-left: 10px;
+      background-color: $LightestNavy;
+      transform: translateY(-8px);
+    }
+  }
+
+  &__remark {
+    display: flex;
+    margin: 0 40px;
+    gap: 20px;
+    font-family: $RobotoMono;
+    font-size: 14px;
+  }
+
+  &__remark-title {
+    color: $Green;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin: 0 20px 100px;
+
+    @include onTablet {
+      flex-direction: row;
+      margin: 0 30px 100px;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    @include onDesktop {
+      margin: 0 0 100px;
+    }
+  }
+
+  &__item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    filter: brightness(70%);
+
+    @include onTablet {
+      display: block;
+      width: 55%;
+      height: auto;
+      object-fit: contain;
+      transition: filter $smoothTime;
+
+      &:hover {
+        filter: brightness(100%);
+      }
+    }
+
+    @include onDesktop {
+      width: 65%;
+    }
+  }
+
+  &__item-description {
+    @include onTablet {
+      position: static;
+      align-self: center;
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      background-image: none;
+
+      &--reverse {
+        align-items: start;
+      }
+    }
+
+    @include onDesktop {
+      width: 35%;
+    }
+  }
+
+  &__item-featured {
+    font-family: $RobotoMono;
+    font-size: 14px;
+    color: $Green;
+    margin-bottom: 15px;
+  }
+
+  &__item-title {
+    position: absolute;
+    top: -50px;
+    font-size: 26px;
+    color: $LightestSlate;
+
+    @include onTablet {
+      position: static;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item-text {
+    position: relative;
+    top: -60px;
+    margin: 0 10px;
+    padding: 20px 30px;
+    line-height: 26px;
+    border-radius: 5px;
+    color: $LightSlate;
+    background-color: rgba(17, 34, 64, 0.9);
+
+    @include onTablet {
+      box-sizing: border-box;
+      position: relative;
+      top: 0;
+      margin: 0 0 20px;
+      width: 125%;
+      background-color: $LightNavy;
+      text-align: center;
+    }
+  }
+
+  &__item-technology {
+    font-family: $RobotoMono;
+    font-size: 14px;
+    margin-bottom: 20px;
+    position: relative;
+    top: -50px;
+
+    @include onTablet {
+      position: static;
+    }
+  }
+
+  &__item-links {
+    position: relative;
+    top: -50px;
+    display: flex;
+    gap: 30px;
+    margin-left: 10px;
+
+    @include onTablet {
+      position: static;
+      top: 0;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+  }
+
+  &__item-link {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+
+    @include onDesktop {
+      filter: grayscale(1);
+      transition: filter $smoothTime;
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+
+  &__item-link-icon {
+    display: block;
+    color: $Green;
+
+    @include onDesktop {
+      color: $Slate;
+      transition: color $smoothTime;
+
+      &:hover {
+        color: $Green;
+      }
+    }
+  }
+
+  &__other {
+    margin-bottom: 50px;
+  }
+
+  &__other-title {
+    margin-bottom: 50px;
+    font-size: 26px;
+    color: $LightestSlate;
+    text-align: center;
+  }
+
+  &__other-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__other-element {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: $LightNavy;
+    transition: transform $smoothTime;
+
+    @include onTablet {
+      width: 45%;
+    }
+
+    @include onDesktop {
+      width: 32%;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  &__other-element-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  &__other-element-icons-folder {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__other-element-icons-link {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+
+    &--external {
+      margin-left: 30px;
+
+      @include onDesktop {
+        margin-left: 20px;
+      }
+    }
+
+    @include onDesktop {
+      filter: grayscale(1);
+      transition: filter $smoothTime;
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+
+  &__other-element-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: $LightestSlate;
+  }
+
+  &__other-element-text {
+    margin-bottom: 15px;
+    line-height: 26px;
+  }
+
+  &__other-element-technology {
+    font-family: $RobotoMono;
+    font-size: 14px;
+  }
+}

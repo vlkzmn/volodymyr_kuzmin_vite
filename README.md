@@ -1,45 +1,38 @@
-# Project Name
+# My Personal Page
 
-<p>description</p>
-
-# [LIVE DEMO](https://vlkzmn.github.io/-------------/)
-
-<p>notice</p>
+<p>My personal page, it’s about me, my skills, my projects and getting in touch.</p>
+<h1><a href="https://volodymyr-kuzmin.pp.ua/">LIVE DEMO</a></h1>
 
 # Technologies used
 
 <ul>
   <li>HTML</li>
   <li>CSS</li>
+  <li>Sass</li>
   <li>React</li>
   <li>TypeScript</li>
-  <li>Vite</li>
-  <li>Vitest</li>
-  <li>Eslint</li>
-  <li>Prettier</li>
-  <li>Husky</li>
-  <li>Lint-staged</li>
-  <li>gh-pages</li>
 </ul>
 
 # Features Overview
 
 <ul>
-  <li>Feature</li>
-  <li>Feature</li>
-  <li>Feature</li>
+  <li>Layout is adaptive and responsive. It works correctly on all screen sizes (mobile, tablet and desktop).</li>
+  <li>Custom domain was connected to GitHub pages.</li>
+  <li>An API has been created (Node.js, Express, Nodemailer) on a separate server for sending messages from the page.</li>
+  <li>Semantic and OG meta tags are used.</li>
+  <li>Schema Markup JSON-LD implemented.</li>
+  <li>Images are optimized.</li>
+  <li>Google search console and analytics have been added to the page.</li>
 </ul>
+
+<p><em>See google lighthouse report below:</em></p>
+
+<p align="center">
+  <img src="https://github.com/vlkzmn/volodymyr_kuzmin/raw/main/public/img/lightHouseGoogle.png" width="700px" alt="My Personal Page lighthouse">
+</p>
 
 # Preview
 
-![-------------](public/preview.gif)
-
-# How to run the project locally
-
-- Fork and clone this repository
-- Run `npm install` in your terminal
-- Run `npm run dev` in your terminal to start the project locally
-
-# Dependencies
-
-- Node `v18+`
+<p align="center">
+  <img src="https://github.com/vlkzmn/volodymyr_kuzmin/raw/main/public/img/preview.gif" alt="My Personal Page GIF">
+</p>
