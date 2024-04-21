@@ -27,11 +27,11 @@
 <p><em>See google lighthouse report below:</em></p>
 
 <p align="center">
-  <img src="https://github.com/vlkzmn/volodymyr_kuzmin/raw/main/public/img/lightHouseGoogle.png" width="700px" alt="My Personal Page lighthouse">
+  <img src="https://github.com/vlkzmn/volodymyr_kuzmin_vite/raw/main/public/img/lightHouseGoogle.png" width="700px" alt="My Personal Page lighthouse">
 </p>
 
 # Preview
 
 <p align="center">
-  <img src="https://github.com/vlkzmn/volodymyr_kuzmin/raw/main/public/img/preview.gif" alt="My Personal Page GIF">
+  <img src="https://github.com/vlkzmn/volodymyr_kuzmin_vite/raw/main/public/img/preview.gif" alt="My Personal Page GIF">
 </p>
