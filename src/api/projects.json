@@ -1,5 +1,15 @@
 [
   {
+    "id": 17,
+    "title": "Byteex Landing Page",
+    "description": "An example of developing a landing page with flexible responsive design. Main framework - Next.js 14 with Tailwind, dynamic content using Strapi. Cloud hosting Vercel / Strapi.",
+    "image": "img/projects/byteex.webp",
+    "gitHubUrl": "https://github.com/vlkzmn/byteex_strapi_next",
+    "url": "https://byteex-strapi-next.vercel.app/",
+    "stack": "Next Tailwind Strapi Typescript",
+    "isFeatured": true
+  },
+  {
     "id": 15,
     "title": "Github Kanban Board",
     "description": "The app downloads issues from the GitHub API and creates a Kanban board with the ability to drag and drop between columns and reorder issues. Saving drag-and-drop results and implementing integration tests.",
@@ -47,7 +57,7 @@
     "gitHubUrl": "https://github.com/vlkzmn",
     "url": "http://tl.kyiv.ua/",
     "stack": "Wordpress PHP SQL",
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 7,
