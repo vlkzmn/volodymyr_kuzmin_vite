@@ -1,5 +1,15 @@
 [
   {
+    "id": 18,
+    "title": "Star Wars Characters",
+    "description": "A web application that allows users to view a list of Star Wars characters, as well as detailed information about the spaceships and films associated with each character.",
+    "image": "img/projects/star-wars.webp",
+    "gitHubUrl": "https://github.com/vlkzmn/star_wars",
+    "url": "https://star-wars-pi-blush.vercel.app/",
+    "stack": "Next Tailwind Typescript React-Flow",
+    "isFeatured": true
+  },
+  {
     "id": 17,
     "title": "Byteex Landing Page",
     "description": "An example of developing a landing page with flexible responsive design. Main framework - Next.js 14 with Tailwind, dynamic content using Strapi. Cloud hosting Vercel / Strapi.",
@@ -47,7 +57,7 @@
     "gitHubUrl": "https://github.com/vlkzmn/motivation",
     "url": "https://motivaciyniy-lyst.pp.ua/",
     "stack": "HTML Sass JavaScript",
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 16,
